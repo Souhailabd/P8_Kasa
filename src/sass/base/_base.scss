@@ -1,0 +1,42 @@
+@import '../utilities/variables';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    max-width: 90rem;
+    background-color: $color-white;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    padding-top: 2.81rem;
+    
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 3.1rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
