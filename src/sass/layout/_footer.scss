@@ -14,6 +14,11 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 1.8rem;
+    @include small-screen {
+        font-size: 0.75rem;
+        width: 8.34963rem;
+        gap: 0;
+    }
 &-logo {
     width: 7.7rem;
     height: 2.47rem;
@@ -24,5 +29,12 @@ footer{
     font-weight: 500;
     line-height: 142.6%;
     font-style: normal;
+    @include small-screen {
+        font-size:1rem;
+        display: flex;
+        width: 8.34963rem;
+        height: 2.875rem;
+        text-align: justify;
+}
 }
 }

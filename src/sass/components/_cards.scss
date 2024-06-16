@@ -6,12 +6,24 @@
   border-radius: 1.56rem;
   padding: 3rem;
   width: 100%;
+  @include small-screen {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    gap: 1.25rem;
+    background-color: $color-white;
+  }
+  @include medium-screen{
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
 .card {
   position: relative;
   height: 21.3rem;
   border-radius: 0.6rem;
+  @include small-screen  {
+    height: 15.6rem;
+  }
   &-img {
     object-fit: cover;
     height: 100%;

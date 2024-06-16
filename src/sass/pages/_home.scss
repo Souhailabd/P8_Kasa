@@ -1,0 +1,12 @@
+.homePage{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+    gap: 3rem;
+
+    @include small-screen{
+        margin: 0 1rem;
+    }
+
+    
+}
