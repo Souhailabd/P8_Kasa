@@ -12,7 +12,7 @@ function Header() {
          </NavLink>
 
          <NavLink to="/about" className={(link)=> (link.isActive ? "header-navbar--active" : "header-navbar--item")}>
-         À propos
+         À Propos
          </NavLink>
 
 
