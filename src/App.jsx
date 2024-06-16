@@ -1,3 +1,4 @@
+// Importation des modules React et ReactDOM
 
 // Importation des composants et fonctionnalités de React Router
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'

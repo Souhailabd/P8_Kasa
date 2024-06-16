@@ -10,7 +10,8 @@
 
 
 }
-.header-logo{
+
+.header-logo {
     width: 13.14513rem;
 }
 
@@ -19,7 +20,27 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 3.5625rem;
-    color: #ff6060;
+    $color-black: #000;
 
+    &--item {
+        $color-black: #000;
+        text-align: right;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
 
+    }
+
+    &--active {
+        $color-black: #000;
+        text-align: right;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-decoration: none;
+        text-decoration-line: underline;
+
+    }
 }

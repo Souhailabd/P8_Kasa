@@ -1,8 +1,18 @@
-.aboutPage{
+.about-page{
     margin: 0 5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.88rem;
+    gap: 1.8rem;
     color: #FF6060;
-    
+
+
   }
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+    margin: 0 5rem;
+
+
+  }
+  
