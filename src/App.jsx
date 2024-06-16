@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // Importation des composants des différentes pages et des composants de navigation
 import Home from './pages/Home/Home'
-
+import About from './pages/About/About'
 
 
 import Header from "./components/Header/Header"
@@ -23,7 +23,8 @@ function App() {
             <Routes>
                 {/* Itinéraire pour la page d'accueil */}
                 <Route path="/" element={<Home />} />
-                
+                 {/* Itinéraire pour la page À Propos */}
+                 <Route path="/about" element={<About />} />
             </Routes>
             {/* Composant Footer pour afficher le pied de page sur toutes les pages */}
             <Footer />
