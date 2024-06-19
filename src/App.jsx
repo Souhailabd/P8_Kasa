@@ -16,7 +16,7 @@ function App() {
   // Rendu du composant
   return (
     // Utilisation du composant Router pour gérer la navigation
-    <Router basename="/P8_Kasa_Souhail">
+    <Router >
       {/* Composant Header pour afficher le Header sur toutes les pages */}
       <Header />
       {/* Composant Routes pour définir les itinéraires de navigation */}
