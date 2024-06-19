@@ -23,12 +23,12 @@
 .header-navbar {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 3.5625rem;
     color: #000;
 
     @include small-screen  {
-        gap: 1.6rem;
+        gap: 1.625rem;
     }
 
     &--item {

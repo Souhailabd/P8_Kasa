@@ -18,8 +18,10 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
-    padding-top: 2.81rem;
-    
+    padding-top: 2.5rem;
+    @include small-screen {
+        padding: 0px 19px 0px 19px ;
+      }
 }
 
 #root{

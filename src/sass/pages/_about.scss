@@ -1,18 +1,30 @@
-.about-page{
-    margin: 0 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-    color: #FF6060;
+.about-page {
+  margin: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  color: #FF6060;
 
-
+  @include small-screen {
+    margin: 0;
   }
-  .about-content{
-    display: flex;
-    flex-direction: column;
-    gap: 1.88rem;
-    margin: 0 5rem;
 
+}
 
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  margin: 0 5rem;
+
+  @include small-screen {
+    margin: 0;
   }
-  
+
+  @include medium-screen {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
