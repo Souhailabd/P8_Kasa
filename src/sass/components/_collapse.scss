@@ -1,8 +1,9 @@
-.collapse{
+.collapse {
     background-color: #f6f6f6;
     border-radius: 0.3125rem;
-    &-title{
-        cursor: pointer;    
+
+    &-title {
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -13,23 +14,58 @@
         font-style: normal;
         font-weight: 500;
         background-color: #ff6060;
-        color: #f6f6f6 ;
+        color: #f6f6f6;
 
-        @include small-screen{
+        @include small-screen {
             font-size: 0.8125rem;
         }
+
+        //animation des chevrons
+
+
     }
-    
-    &-content{
-        font-size: 1.25rem;
+
+    &-content {
+        
         color: black;
         padding: 0;
         font-style: normal;
         font-weight: 300;
         background-color: #f6f6f6;
         border-radius: 0.31rem;
-        @include medium-screen{
+        //animation de l'ouverture de la collapse   
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height .3s ease-in-out,
+            padding .3s ease-in-out,
+            opacity .2s ease-in-out;
+
+        //animation de la fermeture de la collapse      
+        &--open {
+            opacity: 1;
+            max-height: 500px;
+            padding: 0.625rem 1.25rem;
+            transition: max-height 0.3s ease-in-out,
+                padding .3s ease-in-out,
+                opacity .3s ease-in-out 0.1s;
+        }
+
+        @include medium-screen {
             font-size: 0.9rem;
         }
     }
+}
+
+//animation des chevrons
+.collapse-icon {
+    transition: transform 0.5s ease-in-out;
+}
+
+.collapse-icon--up {
+    transform: rotate(0deg);
+}
+
+.collapse-icon--down {
+    transform: rotate(180deg);
 }

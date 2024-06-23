@@ -16,14 +16,14 @@ function Home() {
 
 
 return (
-    <div className="homePage">
+    <main className="homePage">
         <Banner
         img={HomeBannerImage}
         alt="mer et montagnes"
         title={bannerTitle}
         />
         <Cards />
-    </div>
+    </main>
 )
 }
 export default Home

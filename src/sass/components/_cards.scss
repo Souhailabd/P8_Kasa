@@ -20,7 +20,7 @@
 .card {
   position: relative;
   height: 21.3rem;
-  border-radius: 0.6rem;
+  border-radius: 0.625rem;
   @include small-screen  {
     height: 15.6rem;
   }
@@ -28,6 +28,7 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
+    border-radius: 0.625rem;
   }
   &-overlay {
     position: absolute;

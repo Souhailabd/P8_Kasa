@@ -4,18 +4,27 @@
     height: 4.25rem;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
 
-    @include small-screen  {
-        padding: 0.1rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    width: 100%;
+
+    @include small-screen {
+
         height: 2.9rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+    @include medium-screen {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+      }
 }
 
 .header-logo {
     width: 13.14513rem;
 
-    @include small-screen  {
+    @include small-screen {
         width: 9rem;
     }
 }
@@ -27,7 +36,7 @@
     gap: 3.5625rem;
     color: #000;
 
-    @include small-screen  {
+    @include small-screen {
         gap: 1.625rem;
     }
 
@@ -39,7 +48,7 @@
         font-weight: 500;
         line-height: 142.6%;
 
-        @include small-screen  {
+        @include small-screen {
             font-size: 1rem;
         }
 
@@ -55,7 +64,7 @@
         text-decoration: none;
         text-decoration-line: underline;
 
-        @include small-screen  {
+        @include small-screen {
             font-size: 1rem;
         }
 

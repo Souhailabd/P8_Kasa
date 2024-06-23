@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
 const Collapse = ({ title, content }) => {
@@ -17,16 +17,21 @@ const Collapse = ({ title, content }) => {
     <div className="collapse-container" onClick={toggleCollapse}>
       <div className="collapse-title" >
         <p>{title}</p>
-        <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="collapse-icon" />
+        <FontAwesomeIcon icon={faChevronUp} className={`collapse-icon ${isOpen ? 'collapse-icon--down' : 'collapse-icon--up'}`} />
       </div>
-      {isOpen && <div className="collapse-content">{content}</div>}
+      <div className={`collapse-content ${isOpen ? 'collapse-content--open' : ''}`}>
+      {content}
+    </div>
     </div>
   );
 };
 
 Collapse.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.node.isRequired,
-};
+  content: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.object
+    ]),
+  title: PropTypes.string
+}
 
 export default Collapse;

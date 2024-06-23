@@ -1,0 +1,14 @@
+.homePage{
+    max-width: 90rem;
+    margin: 0 auto;
+    width: 100%;
+    @include small-screen  {
+       
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include medium-screen {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+      }
+}

@@ -10,7 +10,7 @@
 
 body {
     height: 100%;
-    max-width: 90rem;
+    
     background-color: $color-white;
     box-sizing: border-box;
     margin: 0 auto;
@@ -19,9 +19,7 @@ body {
     font-weight: 500;
     line-height: 142.6%;
     padding-top: 2.5rem;
-    @include small-screen {
-        padding: 0px 19px 0px 19px ;
-      }
+    
 }
 
 #root{

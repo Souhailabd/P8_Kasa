@@ -6,7 +6,7 @@ import Collapse from "../../components/Collapse/Collapse";
 function About() {
   PageTitle("Kasa | À Propos ");
   return (
-    <div className="about-page">
+    <main className="about-page">
       <Banner img={AboutBannerImage} alt="montagnes enneigées" />
       <div className="about-content">
         <Collapse
@@ -57,7 +57,7 @@ function About() {
           }
         />
       </div>
-    </div>
+    </main>
   );
 }
 
