@@ -19,7 +19,7 @@ function Logement() {
   PageTitle(`Kasa | ${logement.title}`);
 
   return (
-    <div className="logement">
+    <main className="logement">
       {/* Slider pour afficher les images de la chambre */}
       <div className="slide-container">
         <Slide pictures={logement.pictures} />
@@ -27,7 +27,7 @@ function Logement() {
       {/* Détails de la chambre */}
       <div className="details">
         {/* Titre et emplacement de la chambre */}
-        <div className="details-location details-item">
+        <div className="details-locations details-item">
           <h2 className="details-title">{logement.title}</h2>
           <h1 className="details-location">{logement.location}</h1>
         </div>
@@ -73,7 +73,7 @@ function Logement() {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

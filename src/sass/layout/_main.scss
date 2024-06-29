@@ -1,7 +1,9 @@
-.homePage{
+main {
     max-width: 90rem;
     margin: 0 auto;
     width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
     @include small-screen  {
        
         padding-left: 20px;

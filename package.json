@@ -1,10 +1,12 @@
 {
   "name": "p8-kasa-souhail",
-  "homepage": "https://souhailabd.github.io/P8_Kasa_Souhail",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://souhailabd.github.io/P8_Kasa_Souhail",
   "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
