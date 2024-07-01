@@ -3,12 +3,7 @@
     flex-direction: column;
     margin: 0 auto;
     gap: 3rem;
-    @include small-screen{
-        margin: 0 1rem;
-    }
-    @include medium-screen{
-        margin: 0 1rem;
-    }
+    
 }
 
 .details-item{
